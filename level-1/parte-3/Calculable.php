@@ -1,7 +1,7 @@
 <?php
 interface Calculable {
 
-  public function calcularArea() : string;
+  public function calcularArea() : int|float;
 
 }
 

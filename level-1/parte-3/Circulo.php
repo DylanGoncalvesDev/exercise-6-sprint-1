@@ -14,9 +14,17 @@ public function setRadio(int|float $radio) {
     $this->radio = $radio;
 }
 
-public function calcularArea(): string {
+public function calcularArea(): int|float {
     $area = M_PI * ($this->radio * $this->radio);
-    return "El area del Circulo es: " . $area;
+    return $area;
+}
+
+public function __invoke(): int|float {
+   return $this->calcularArea();
+}
+
+public function __toString(): string {
+      return "Un Circulo con el Radio de: " . $this->radio; . " y su Area de: " $this->calcularArea();
 }
 
 }

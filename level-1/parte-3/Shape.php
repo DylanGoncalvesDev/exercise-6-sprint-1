@@ -22,6 +22,8 @@ abstract class Shape implements Calculable {
      $this-> alto = $alto;
   }      
 
+  abstract public function __toString(): string;
+
 }
 
 ?> 
