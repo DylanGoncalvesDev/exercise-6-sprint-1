@@ -24,7 +24,7 @@ public function __invoke(): int|float {
 }
 
 public function __toString(): string {
-      return "Un Circulo con el Radio de: " . $this->radio; . " y su Area de: " $this->calcularArea();
+      return "Un Circulo con el Radio de: " . $this->radio . " y su Area de: " . $this->calcularArea();
 }
 
 }

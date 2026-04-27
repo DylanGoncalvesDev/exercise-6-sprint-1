@@ -11,7 +11,7 @@ class Rectangulo extends Shape {
    } 
  
    public function __toString(): string {
-      return "Un Rectangulo con la Altura de: " . $this->alto; . ", la Anchura de: " . $this->ancho 
+      return "Un Rectangulo con la Altura de: " . $this->getAlto() . ", la Anchura de: " . $this->getAncho() 
              . " y su Area de: " . $this->calcularArea();
    }
 }
